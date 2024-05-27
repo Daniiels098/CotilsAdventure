@@ -1,0 +1,589 @@
+[gd_scene load_steps=6 format=3 uid="uid://cvxvivm6txi27"]
+
+[ext_resource type="Texture2D" uid="uid://5yaop3jyqiar" path="res://PixelArtJogo/Sprite-sala-001.png" id="1_55keh"]
+[ext_resource type="PackedScene" uid="uid://bb78rp30ssm5l" path="res://scenes/jogador.tscn" id="2_q7iv0"]
+[ext_resource type="PackedScene" uid="uid://o1ifb5puh1rn" path="res://scenes/static_body_2d.tscn" id="3_t31cg"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s6wmd"]
+texture = ExtResource("1_55keh")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+13:7/0 = 0
+14:7/0 = 0
+15:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+11:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+11:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+9:10/0 = 0
+10:10/0 = 0
+11:10/0 = 0
+12:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+6:11/0 = 0
+7:11/0 = 0
+8:11/0 = 0
+9:11/0 = 0
+10:11/0 = 0
+11:11/0 = 0
+12:11/0 = 0
+13:11/0 = 0
+14:11/0 = 0
+15:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+7:12/0 = 0
+8:12/0 = 0
+9:12/0 = 0
+10:12/0 = 0
+11:12/0 = 0
+12:12/0 = 0
+13:12/0 = 0
+14:12/0 = 0
+15:12/0 = 0
+0:13/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+6:13/0 = 0
+7:13/0 = 0
+8:13/0 = 0
+9:13/0 = 0
+10:13/0 = 0
+11:13/0 = 0
+12:13/0 = 0
+13:13/0 = 0
+14:13/0 = 0
+15:13/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+7:14/0 = 0
+8:14/0 = 0
+9:14/0 = 0
+10:14/0 = 0
+11:14/0 = 0
+12:14/0 = 0
+13:14/0 = 0
+14:14/0 = 0
+15:14/0 = 0
+0:15/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+4:15/0 = 0
+5:15/0 = 0
+6:15/0 = 0
+7:15/0 = 0
+8:15/0 = 0
+9:15/0 = 0
+10:15/0 = 0
+11:15/0 = 0
+12:15/0 = 0
+13:15/0 = 0
+14:15/0 = 0
+15:15/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_116go"]
+sources/0 = SubResource("TileSetAtlasSource_s6wmd")
+
+[node name="SalaTeste" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
+tile_set = SubResource("TileSet_116go")
+format = 2
+layer_0/tile_data = PackedInt32Array(196620, 458752, 3, 262156, 458752, 4, 327692, 458752, 5, 393228, 458752, 6, 458764, 458752, 7, 524300, 458752, 8, 589836, 458752, 9, 655372, 458752, 10, 720908, 458752, 11, 786444, 458752, 12, 851980, 458752, 13, 917516, 458752, 14, 983052, 458752, 15, 196621, 524288, 3, 262157, 524288, 4, 327693, 524288, 5, 393229, 524288, 6, 458765, 524288, 7, 524301, 524288, 8, 589837, 524288, 9, 655373, 524288, 10, 720909, 524288, 11, 786445, 524288, 12, 851981, 524288, 13, 917517, 524288, 14, 983053, 524288, 15, 196622, 589824, 3, 262158, 589824, 4, 327694, 589824, 5, 393230, 589824, 6, 458766, 589824, 7, 524302, 589824, 8, 589838, 589824, 9, 655374, 589824, 10, 720910, 589824, 11, 786446, 589824, 12, 851982, 589824, 13, 917518, 589824, 14, 983054, 589824, 15, 196623, 655360, 3, 262159, 655360, 4, 327695, 655360, 5, 393231, 655360, 6, 458767, 655360, 7, 524303, 655360, 8, 589839, 655360, 9, 655375, 655360, 10, 720911, 655360, 11, 786447, 655360, 12, 851983, 655360, 13, 917519, 655360, 14, 983055, 655360, 15, 196624, 720896, 3, 262160, 720896, 4, 327696, 720896, 5, 393232, 720896, 6, 458768, 720896, 7, 524304, 720896, 8, 589840, 720896, 9, 655376, 720896, 10, 720912, 720896, 11, 786448, 720896, 12, 851984, 720896, 13, 917520, 720896, 14, 983056, 720896, 15, 196625, 786432, 3, 262161, 786432, 4, 327697, 786432, 5, 393233, 786432, 6, 458769, 786432, 7, 524305, 786432, 8, 589841, 786432, 9, 655377, 786432, 10, 720913, 786432, 11, 786449, 786432, 12, 851985, 786432, 13, 917521, 786432, 14, 983057, 786432, 15, 196626, 851968, 3, 262162, 851968, 4, 327698, 851968, 5, 393234, 851968, 6, 458770, 851968, 7, 524306, 851968, 8, 589842, 851968, 9, 655378, 851968, 10, 720914, 851968, 11, 786450, 851968, 12, 851986, 851968, 13, 917522, 851968, 14, 983058, 851968, 15, 196627, 917504, 3, 262163, 917504, 4, 327699, 917504, 5, 393235, 917504, 6, 458771, 917504, 7, 524307, 917504, 8, 589843, 917504, 9, 655379, 917504, 10, 720915, 917504, 11, 786451, 917504, 12, 851987, 917504, 13, 917523, 917504, 14, 983059, 917504, 15, 196628, 983040, 3, 262164, 983040, 4, 327700, 983040, 5, 393236, 983040, 6, 458772, 983040, 7, 524308, 983040, 8, 589844, 983040, 9, 655380, 983040, 10, 720916, 983040, 11, 786452, 983040, 12, 851988, 983040, 13, 917524, 983040, 14, 983060, 983040, 15, 5, 0, 0, 65541, 0, 1, 131077, 0, 2, 196613, 0, 3, 262149, 0, 4, 327685, 0, 5, 393221, 0, 6, 458757, 0, 7, 524293, 0, 8, 589829, 0, 9, 655365, 0, 10, 720901, 0, 11, 786437, 0, 12, 851973, 0, 13, 917509, 0, 14, 983045, 0, 15, 6, 65536, 0, 65542, 65536, 1, 131078, 65536, 2, 196614, 65536, 3, 262150, 65536, 4, 327686, 65536, 5, 393222, 65536, 6, 458758, 65536, 7, 524294, 65536, 8, 589830, 65536, 9, 655366, 65536, 10, 720902, 65536, 11, 786438, 65536, 12, 851974, 65536, 13, 917510, 65536, 14, 983046, 65536, 15, 7, 131072, 0, 65543, 131072, 1, 131079, 131072, 2, 196615, 131072, 3, 262151, 131072, 4, 327687, 131072, 5, 393223, 131072, 6, 458759, 131072, 7, 524295, 131072, 8, 589831, 131072, 9, 655367, 131072, 10, 720903, 131072, 11, 786439, 131072, 12, 851975, 131072, 13, 917511, 131072, 14, 983047, 131072, 15, 8, 196608, 0, 65544, 196608, 1, 131080, 196608, 2, 196616, 196608, 3, 262152, 196608, 4, 327688, 196608, 5, 393224, 196608, 6, 458760, 196608, 7, 524296, 196608, 8, 589832, 196608, 9, 655368, 196608, 10, 720904, 196608, 11, 786440, 196608, 12, 851976, 196608, 13, 917512, 196608, 14, 983048, 196608, 15, 9, 262144, 0, 65545, 262144, 1, 131081, 262144, 2, 196617, 262144, 3, 262153, 262144, 4, 327689, 262144, 5, 393225, 262144, 6, 458761, 262144, 7, 524297, 262144, 8, 589833, 262144, 9, 655369, 262144, 10, 720905, 262144, 11, 786441, 262144, 12, 851977, 262144, 13, 917513, 262144, 14, 983049, 262144, 15, 10, 327680, 0, 65546, 327680, 1, 131082, 327680, 2, 196618, 327680, 3, 262154, 327680, 4, 327690, 327680, 5, 393226, 327680, 6, 458762, 327680, 7, 524298, 327680, 8, 589834, 327680, 9, 655370, 327680, 10, 720906, 327680, 11, 786442, 327680, 12, 851978, 327680, 13, 917514, 327680, 14, 983050, 327680, 15, 11, 393216, 0, 65547, 393216, 1, 131083, 393216, 2, 196619, 393216, 3, 262155, 393216, 4, 327691, 393216, 5, 393227, 393216, 6, 458763, 393216, 7, 524299, 393216, 8, 589835, 393216, 9, 655371, 393216, 10, 720907, 393216, 11, 786443, 393216, 12, 851979, 393216, 13, 917515, 393216, 14, 983051, 393216, 15, 12, 458752, 0, 65548, 458752, 1, 13, 524288, 0, 65549, 524288, 1, 131085, 524288, 2, 14, 589824, 0, 65550, 589824, 1, 131086, 589824, 2, 15, 655360, 0, 65551, 655360, 1, 131087, 655360, 2, 16, 720896, 0, 65552, 720896, 1, 131088, 720896, 2, 17, 786432, 0, 65553, 786432, 1, 131089, 786432, 2, 18, 851968, 0, 65554, 851968, 1, 131090, 851968, 2, 19, 917504, 0, 65555, 917504, 1, 131091, 917504, 2, 20, 983040, 0, 65556, 983040, 1, 131092, 983040, 2, 131084, 458752, 2)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_q7iv0")]
+position = Vector2(288, 16)
+
+[node name="Carteiras_Parede" type="Node2D" parent="."]
+position = Vector2(112, 48)
+
+[node name="StaticBody2D" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+
+[node name="StaticBody2D9" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(80, 32)
+
+[node name="StaticBody2D15" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(48, 32)
+
+[node name="StaticBody2D16" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(16, 32)
+
+[node name="StaticBody2D17" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-16, 32)
+
+[node name="StaticBody2D10" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(144, 32)
+
+[node name="StaticBody2D14" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(176, 32)
+
+[node name="StaticBody2D11" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(112, 32)
+
+[node name="StaticBody2D18" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(80, 64)
+
+[node name="StaticBody2D19" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(48, 64)
+
+[node name="StaticBody2D20" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(16, 64)
+
+[node name="StaticBody2D21" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-16, 64)
+
+[node name="StaticBody2D22" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(144, 64)
+
+[node name="StaticBody2D23" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(176, 64)
+
+[node name="StaticBody2D24" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(112, 64)
+
+[node name="StaticBody2D25" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(80, 96)
+
+[node name="StaticBody2D26" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(48, 96)
+
+[node name="StaticBody2D27" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(16, 96)
+
+[node name="StaticBody2D28" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-16, 96)
+
+[node name="StaticBody2D29" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(144, 96)
+
+[node name="StaticBody2D30" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(176, 96)
+
+[node name="StaticBody2D31" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(112, 96)
+
+[node name="StaticBody2D32" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(80, 128)
+
+[node name="StaticBody2D33" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(48, 128)
+
+[node name="StaticBody2D34" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(16, 128)
+
+[node name="StaticBody2D35" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-16, 128)
+
+[node name="StaticBody2D36" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(144, 128)
+
+[node name="StaticBody2D37" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(176, 128)
+
+[node name="StaticBody2D38" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(112, 128)
+
+[node name="StaticBody2D39" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(80, 160)
+
+[node name="StaticBody2D40" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(48, 160)
+
+[node name="StaticBody2D41" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(16, 160)
+
+[node name="StaticBody2D42" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-16, 160)
+
+[node name="StaticBody2D43" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(144, 160)
+
+[node name="StaticBody2D44" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(176, 160)
+
+[node name="StaticBody2D45" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(112, 160)
+
+[node name="StaticBody2D2" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(16, 0)
+
+[node name="StaticBody2D8" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-16, -32)
+
+[node name="StaticBody2D3" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(48, 0)
+
+[node name="StaticBody2D4" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(176, 0)
+
+[node name="StaticBody2D5" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(144, 0)
+
+[node name="StaticBody2D6" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(112, 0)
+
+[node name="StaticBody2D7" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(80, 0)
+
+[node name="StaticBody2D12" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(96, -48)
+
+[node name="StaticBody2D46" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(80, -48)
+
+[node name="StaticBody2D47" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(64, -48)
+
+[node name="StaticBody2D48" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(48, -48)
+
+[node name="StaticBody2D49" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(32, -48)
+
+[node name="StaticBody2D50" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(16, -48)
+
+[node name="StaticBody2D51" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(0, -48)
+
+[node name="StaticBody2D52" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-16, -48)
+
+[node name="StaticBody2D53" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-32, -48)
+
+[node name="StaticBody2D54" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(128, -48)
+
+[node name="StaticBody2D55" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(144, -48)
+
+[node name="StaticBody2D56" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(160, -48)
+
+[node name="StaticBody2D57" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(176, -48)
+
+[node name="StaticBody2D58" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(192, -48)
+
+[node name="StaticBody2D59" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(208, -48)
+
+[node name="StaticBody2D60" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(208, -32)
+
+[node name="StaticBody2D61" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(208, -16)
+
+[node name="StaticBody2D62" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(208, 0)
+
+[node name="StaticBody2D63" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(208, 16)
+
+[node name="StaticBody2D64" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(208, 32)
+
+[node name="StaticBody2D65" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(208, 48)
+
+[node name="StaticBody2D66" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(208, 64)
+
+[node name="StaticBody2D67" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(208, 80)
+
+[node name="StaticBody2D68" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(208, 96)
+
+[node name="StaticBody2D69" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(208, 112)
+
+[node name="StaticBody2D70" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(208, 128)
+
+[node name="StaticBody2D71" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(208, 144)
+
+[node name="StaticBody2D72" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(208, 160)
+
+[node name="StaticBody2D73" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(208, 176)
+
+[node name="StaticBody2D90" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-32, -32)
+
+[node name="StaticBody2D91" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-32, -16)
+
+[node name="StaticBody2D92" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-32, 0)
+
+[node name="StaticBody2D93" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-32, 16)
+
+[node name="StaticBody2D94" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-32, 32)
+
+[node name="StaticBody2D95" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-32, 48)
+
+[node name="StaticBody2D96" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-32, 64)
+
+[node name="StaticBody2D97" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-32, 80)
+
+[node name="StaticBody2D98" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-32, 96)
+
+[node name="StaticBody2D99" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-32, 112)
+
+[node name="StaticBody2D100" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-32, 128)
+
+[node name="StaticBody2D101" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-32, 144)
+
+[node name="StaticBody2D102" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-32, 160)
+
+[node name="StaticBody2D103" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-32, 176)
+
+[node name="StaticBody2D74" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(208, 192)
+
+[node name="StaticBody2D13" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(112, -48)
+
+[node name="StaticBody2D75" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(96, 192)
+
+[node name="StaticBody2D76" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(80, 192)
+
+[node name="StaticBody2D77" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(64, 192)
+
+[node name="StaticBody2D78" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(48, 192)
+
+[node name="StaticBody2D79" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(32, 192)
+
+[node name="StaticBody2D80" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(16, 192)
+
+[node name="StaticBody2D81" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(0, 192)
+
+[node name="StaticBody2D82" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-16, 192)
+
+[node name="StaticBody2D83" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(-32, 192)
+
+[node name="StaticBody2D84" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(128, 192)
+
+[node name="StaticBody2D85" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(144, 192)
+
+[node name="StaticBody2D86" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(160, 192)
+
+[node name="StaticBody2D87" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(176, 192)
+
+[node name="StaticBody2D88" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(192, 192)
+
+[node name="StaticBody2D89" parent="Carteiras_Parede" instance=ExtResource("3_t31cg")]
+position = Vector2(112, 192)
