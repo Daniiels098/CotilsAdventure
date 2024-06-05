@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byqt6ff55rbom"
-path="res://.godot/imported/Sprite-sala-01-in.png-c0fc7ba7380dd5c5e4fa13f210cd4fd1.ctex"
+uid="uid://da0m2lmujhryl"
+path="res://.godot/imported/sala-verde.png-31710dae127bf005d2b71bc3bc741bd3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprite-sala-01-in.png"
-dest_files=["res://.godot/imported/Sprite-sala-01-in.png-c0fc7ba7380dd5c5e4fa13f210cd4fd1.ctex"]
+source_file="res://assets/sala-verde.png"
+dest_files=["res://.godot/imported/sala-verde.png-31710dae127bf005d2b71bc3bc741bd3.ctex"]
 
 [params]
 

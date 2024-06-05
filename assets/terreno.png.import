@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ouumiayikcbo"
-path="res://.godot/imported/Sprites.png-8dfe1f40752b3f79c661ee4c021aede1.ctex"
+path="res://.godot/imported/terreno.png-b4ced331212f18a23a9ad8561b7827b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprites.png"
-dest_files=["res://.godot/imported/Sprites.png-8dfe1f40752b3f79c661ee4c021aede1.ctex"]
+source_file="res://assets/terreno.png"
+dest_files=["res://.godot/imported/terreno.png-b4ced331212f18a23a9ad8561b7827b4.ctex"]
 
 [params]
 

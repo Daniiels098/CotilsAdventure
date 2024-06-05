@@ -66,6 +66,11 @@ move_down={
 2d_physics/layer_3="Itens"
 2d_physics/layer_4="NPC"
 
+[phantom_camera]
+
+updater/enable_updater=false
+updater/show_new_release_info_on_editor_launch_in_output=false
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0

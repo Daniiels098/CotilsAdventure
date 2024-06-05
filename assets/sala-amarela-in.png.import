@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ql26v4vsg1mp"
-path="res://.godot/imported/Sprite-corredor-01.png-1154e572a010eb24b8e42e17545db9fc.ctex"
+uid="uid://nt8eovhhtncy"
+path="res://.godot/imported/sala-amarela-in.png-d16eae20bfdc97561823c6d069d44923.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprite-corredor-01.png"
-dest_files=["res://.godot/imported/Sprite-corredor-01.png-1154e572a010eb24b8e42e17545db9fc.ctex"]
+source_file="res://assets/sala-amarela-in.png"
+dest_files=["res://.godot/imported/sala-amarela-in.png-d16eae20bfdc97561823c6d069d44923.ctex"]
 
 [params]
 

@@ -6,7 +6,8 @@ extends CharacterBody2D
 @export var input_direction = Vector2.ZERO
 @export var is_moving:bool = false
 @export var percent_moved:float = 0.0
-@onready var ray_cast = $RayCast2D
+@onready var rayPa = $RayParede
+@onready var rayPo = $RayPorta
 const TILE_SIZE = 16.0
 @onready var anim_player = $AnimationPlayer
 
@@ -52,9 +53,14 @@ func move(delta):
 			#	anim_player.play("Up")
 	
 	var desired_step: Vector2 = input_direction*TILE_SIZE/2
-	ray_cast.target_position = desired_step
-	ray_cast.force_raycast_update()
-	if !ray_cast.is_colliding():
+	
+	rayPa.target_position = desired_step
+	rayPa.force_raycast_update()
+	
+	rayPo.target_position = desired_step
+	rayPo.force_raycast_update()
+	
+	if !rayPa.is_colliding():
 		percent_moved += walk_speed * delta
 		if percent_moved >= 1.0:
 			position = initial_position+(TILE_SIZE*input_direction)

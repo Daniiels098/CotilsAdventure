@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0afuvaf8jgh5"
-path="res://.godot/imported/Sprite-sala -02.png-e2f4996c5b7529f6e7ac151d6f811655.ctex"
+uid="uid://dy5utp1slqhkf"
+path="res://.godot/imported/porta-azul.png-2e6b0891a2ee32f0cb8970b1026d2c6d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprite-sala -02.png"
-dest_files=["res://.godot/imported/Sprite-sala -02.png-e2f4996c5b7529f6e7ac151d6f811655.ctex"]
+source_file="res://assets/porta-azul.png"
+dest_files=["res://.godot/imported/porta-azul.png-2e6b0891a2ee32f0cb8970b1026d2c6d.ctex"]
 
 [params]
 

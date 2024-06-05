@@ -1,7 +1,7 @@
 [gd_scene load_steps=27 format=3 uid="uid://bb78rp30ssm5l"]
 
 [ext_resource type="Script" path="res://Scripts/jogador.gd" id="1_lknmn"]
-[ext_resource type="Texture2D" uid="uid://c47vhgi2dch51" path="res://assets/sprite-perso-t.png" id="1_tast3"]
+[ext_resource type="Texture2D" uid="uid://c47vhgi2dch51" path="res://PixelArtJogo/sprite-perso-t.png" id="1_tast3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3fh2b"]
 size = Vector2(16, 16)
@@ -224,7 +224,7 @@ states/walk/position = Vector2(533, 100)
 transitions = ["idle", "walk", SubResource("AnimationNodeStateMachineTransition_upgph"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_hqt3f")]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-collision_mask = 14
+collision_mask = 10
 script = ExtResource("1_lknmn")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
@@ -254,7 +254,13 @@ anim_player = NodePath("../AnimationPlayer")
 parameters/idle/blend_position = Vector2(0.000849605, 0.989418)
 parameters/walk/blend_position = Vector2(-0.011045, -0.037037)
 
-[node name="RayCast2D" type="RayCast2D" parent="."]
+[node name="RayParede" type="RayCast2D" parent="."]
 position = Vector2(8, 8)
 target_position = Vector2(0, 8)
 collision_mask = 14
+
+[node name="RayPorta" type="RayCast2D" parent="."]
+position = Vector2(8, 8)
+target_position = Vector2(0, 8)
+collision_mask = 14
+collide_with_areas = true
