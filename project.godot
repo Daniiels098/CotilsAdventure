@@ -74,3 +74,4 @@ updater/show_new_release_info_on_editor_launch_in_output=false
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
