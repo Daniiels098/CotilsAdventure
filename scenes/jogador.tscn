@@ -8,6 +8,7 @@ size = Vector2(16, 16)
 
 [sub_resource type="Animation" id="Animation_vnycu"]
 resource_name = "Down"
+length = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -23,6 +24,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_6eyjd"]
 resource_name = "Left"
+length = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -53,6 +55,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_1m6ir"]
 resource_name = "Right"
+length = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -68,6 +71,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_dc18q"]
 resource_name = "Up"
+length = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -83,7 +87,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_mp30s"]
 resource_name = "WalkDown"
-length = 0.5
+length = 0.6
 step = 0.15
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -100,7 +104,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_rx741"]
 resource_name = "WalkLeft"
-length = 0.5
+length = 0.6
 step = 0.15
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -112,7 +116,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [15, 12, 13, 14]
+"values": [15, 12, 13, 12]
 }
 
 [sub_resource type="Animation" id="Animation_q3gns"]
@@ -134,7 +138,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_s0pt1"]
 resource_name = "WalkUp"
-length = 0.5
+length = 0.6
 step = 0.15
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -143,10 +147,10 @@ tracks/0/path = NodePath("Sprite2D2:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.15, 0.3, 0.45),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [9, 10, 11, 8]
+"values": [8, 9, 10, 11, 8]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jhg77"]

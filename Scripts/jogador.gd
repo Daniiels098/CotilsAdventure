@@ -16,7 +16,7 @@ func _ready():
 	initial_position = position
 
 func _physics_process(delta):
-	if  is_moving == false:
+	if !is_moving:
 		player_input()
 	elif input_direction != Vector2.ZERO:
 		move(delta)
@@ -25,10 +25,9 @@ func _physics_process(delta):
 
 func player_input():
 	if input_direction.y == 0:
-		input_direction.x = int(Input.is_action_pressed("move_right")) - int(Input.is_action_pressed("move_left"))
+		input_direction.x = Input.get_axis("move_left","move_right")
 	if input_direction.x == 0:
-		input_direction.y = int(Input.is_action_pressed("move_down")) - int(Input.is_action_pressed("move_up"))
-	
+		input_direction.y = Input.get_axis("move_up","move_down")
 	if input_direction != Vector2.ZERO:
 		initial_position = position
 		is_moving = true
@@ -43,14 +42,6 @@ func move(delta):
 				anim_player.play("WalkLeft")
 			elif input_direction.y < 0:
 				anim_player.play("WalkUp")
-			#if Input.is_action_just_released("move_down"):
-			#	anim_player.play("Down")
-			#elif Input.is_action_just_released("move_right"):
-			#	anim_player.play("Right")
-			#elif Input.is_action_just_released("move_left"):
-			#	anim_player.play("Left")
-			#elif Input.is_action_just_released("move_up"):
-			#	anim_player.play("Up")
 	
 	var desired_step: Vector2 = input_direction*TILE_SIZE/2
 	
@@ -70,3 +61,4 @@ func move(delta):
 			position = initial_position+(TILE_SIZE*input_direction*percent_moved)
 	else:
 		is_moving = false
+		percent_moved = 0
