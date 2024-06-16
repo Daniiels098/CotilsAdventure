@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ouumiayikcbo"
-path="res://.godot/imported/Sprites.png-5cfa0df7b02c51e5e0b7114974bac456.ctex"
+uid="uid://dd02peqmfmfjo"
+path="res://.godot/imported/Sprite-corredor-01.png-1154e572a010eb24b8e42e17545db9fc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PixelArtJogo/Sprites.png"
-dest_files=["res://.godot/imported/Sprites.png-5cfa0df7b02c51e5e0b7114974bac456.ctex"]
+source_file="res://assets/Sprite-corredor-01.png"
+dest_files=["res://.godot/imported/Sprite-corredor-01.png-1154e572a010eb24b8e42e17545db9fc.ctex"]
 
 [params]
 

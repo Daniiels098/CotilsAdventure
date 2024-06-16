@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bb78rp30ssm5l" path="res://scenes/jogador.tscn" id="1_132fc"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="1_qr1s3"]
-[ext_resource type="Texture2D" uid="uid://ouumiayikcbo" path="res://PixelArtJogo/Sprites.png" id="2_ams67"]
+[ext_resource type="Texture2D" uid="uid://ouumiayikcbo" path="res://assets/Sprites.png" id="2_ams67"]
 [ext_resource type="Texture2D" uid="uid://ql26v4vsg1mp" path="res://assets/corredor-azul-armario.png" id="2_prmar"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="5_8ybxf"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="6_d3ldb"]
@@ -218,6 +218,7 @@ font = ExtResource("7_24dcl")
 [node name="objetos" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 32)
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D"]
 script = ExtResource("1_qr1s3")

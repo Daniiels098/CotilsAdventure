@@ -1,7 +1,11 @@
 extends CharacterBody2D
 
+signal player_entering_door
+signal player_exiting_door
+#signal camera_desapar
+
 @export_category("Variables")
-@export var walk_speed:float = 2.0
+@export var walk_speed:float = 2.5
 @export var initial_position = Vector2.ZERO
 @export var input_direction = Vector2.ZERO
 @export var is_moving:bool = false
@@ -10,13 +14,13 @@ extends CharacterBody2D
 @onready var rayPo = $RayPorta
 const TILE_SIZE = 16.0
 @onready var anim_player = $AnimationPlayer
-
+@onready var can_walk: bool = true
 
 func _ready():
 	initial_position = position
 
 func _physics_process(delta):
-	if !is_moving:
+	if !is_moving or !can_walk:
 		player_input()
 	elif input_direction != Vector2.ZERO:
 		move(delta)
@@ -31,7 +35,11 @@ func player_input():
 	if input_direction != Vector2.ZERO:
 		initial_position = position
 		is_moving = true
+		emit_signal("camera_desapar")
 	
+func entered_door():
+	emit_signal("player_entering_door")
+
 func move(delta):
 	if Input.is_anything_pressed():
 			if input_direction.y > 0:
@@ -51,7 +59,21 @@ func move(delta):
 	rayPo.target_position = desired_step
 	rayPo.force_raycast_update()
 	
-	if !rayPa.is_colliding():
+	if rayPo.is_colliding():
+		if percent_moved == 0.0:
+			emit_signal("player_entering_door")
+		percent_moved += walk_speed*delta
+		if percent_moved >= 1.0:
+			position = initial_position+(input_direction*TILE_SIZE)
+			percent_moved = 0.0
+			is_moving = false
+			can_walk = false
+			anim_player.play("desapar")
+			#emit_signal("camera_desapar")
+		
+		else:
+			position = initial_position+(TILE_SIZE*input_direction*percent_moved)
+	elif !rayPa.is_colliding():
 		percent_moved += walk_speed * delta
 		if percent_moved >= 1.0:
 			position = initial_position+(TILE_SIZE*input_direction)
