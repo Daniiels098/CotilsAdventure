@@ -1,0 +1,64 @@
+[gd_scene load_steps=7 format=3 uid="uid://dfuxucadf64cm"]
+
+[ext_resource type="Texture2D" uid="uid://dy5utp1slqhkf" path="res://assets/porta-azul.png" id="1_6lvee"]
+[ext_resource type="Script" path="res://scripts/porta-animation.gd" id="1_hcq5y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lpmtn"]
+size = Vector2(16, 16)
+
+[sub_resource type="Animation" id="Animation_ajjnf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D2:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_2s0vi"]
+resource_name = "opening"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D2:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2fa7p"]
+_data = {
+"RESET": SubResource("Animation_ajjnf"),
+"opening": SubResource("Animation_2s0vi")
+}
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_hcq5y")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(8, 8)
+texture = ExtResource("1_6lvee")
+hframes = 5
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_lpmtn")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_2fa7p")
+}
+
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
+[connection signal="body_shape_exited" from="." to="." method="_on_body_shape_exited"]

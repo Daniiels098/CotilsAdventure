@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://bb78rp30ssm5l"]
+[gd_scene load_steps=27 format=3 uid="uid://bb78rp30ssm5l"]
 
 [ext_resource type="Script" path="res://scripts/jogador.gd" id="1_lknmn"]
 [ext_resource type="Texture2D" uid="uid://c47vhgi2dch51" path="res://assets/sprite-perso-t.png" id="1_tast3"]
@@ -153,36 +153,6 @@ tracks/0/keys = {
 "values": [8, 9, 10, 11, 8]
 }
 
-[sub_resource type="Animation" id="Animation_x4hl5"]
-resource_name = "desapar"
-length = 0.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D2:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/1/type = "method"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0.1),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"entered_door"
-}]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jhg77"]
 _data = {
 "Down": SubResource("Animation_vnycu"),
@@ -193,8 +163,7 @@ _data = {
 "WalkDown": SubResource("Animation_mp30s"),
 "WalkLeft": SubResource("Animation_rx741"),
 "WalkRight": SubResource("Animation_q3gns"),
-"WalkUp": SubResource("Animation_s0pt1"),
-"desapar": SubResource("Animation_x4hl5")
+"WalkUp": SubResource("Animation_s0pt1")
 }
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_gcjhs"]
@@ -258,7 +227,7 @@ states/walk/node = SubResource("AnimationNodeBlendSpace2D_3yi7t")
 states/walk/position = Vector2(533, 100)
 transitions = ["idle", "walk", SubResource("AnimationNodeStateMachineTransition_upgph"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_hqt3f")]
 
-[node name="boneco" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D"]
 collision_mask = 10
 script = ExtResource("1_lknmn")
 
