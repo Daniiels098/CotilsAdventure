@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bb78rp30ssm5l" path="res://scenes/jogador.tscn" id="5_s8s7q"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2D.gd" id="6_umirj"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="7_5w5hg"]
-[ext_resource type="FontFile" uid="uid://c0rui36fgl5ka" path="res://font/Gamer.ttf" id="8_2q6y1"]
+[ext_resource type="FontFile" uid="uid://xg2eku68amxe" path="res://fonte/Gamer.ttf" id="8_2q6y1"]
 [ext_resource type="PackedScene" uid="uid://dfuxucadf64cm" path="res://scenes/porta-animation.tscn" id="9_6vqro"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hqxra"]
@@ -505,7 +505,7 @@ ease = 2
 [sub_resource type="LabelSettings" id="LabelSettings_wfdgo"]
 font = ExtResource("8_2q6y1")
 
-[node name="objetos" type="Node2D"]
+[node name="corredor" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 32)

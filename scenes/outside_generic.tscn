@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bb78rp30ssm5l" path="res://scenes/jogador.tscn" id="5_bitid"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2D.gd" id="6_ulta0"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="7_15b51"]
-[ext_resource type="FontFile" uid="uid://c0rui36fgl5ka" path="res://font/Gamer.ttf" id="8_apg0s"]
+[ext_resource type="FontFile" uid="uid://xg2eku68amxe" path="res://fonte/Gamer.ttf" id="8_apg0s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k6rfc"]
 texture = ExtResource("2_en7qt")
