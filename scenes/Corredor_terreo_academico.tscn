@@ -78,7 +78,6 @@ texture = ExtResource("3_qq1j3")
 6:1/0 = 0
 6:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:1/0/physics_layer_0/angular_velocity = 0.0
-6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, 8, 8, 8, 8, -8, 8)
 7:1/0 = 0
 7:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 7:1/0/physics_layer_0/angular_velocity = 0.0
@@ -188,7 +187,6 @@ texture = ExtResource("3_qq1j3")
 6:4/0 = 0
 6:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:4/0/physics_layer_0/angular_velocity = 0.0
-6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, 8, 8, 8, 8, -8, 8)
 7:4/0 = 0
 7:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 7:4/0/physics_layer_0/angular_velocity = 0.0
@@ -298,7 +296,6 @@ texture = ExtResource("3_qq1j3")
 6:7/0 = 0
 6:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:7/0/physics_layer_0/angular_velocity = 0.0
-6:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, 8, 8, 8, 8, -8, 8)
 7:7/0 = 0
 7:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 7:7/0/physics_layer_0/angular_velocity = 0.0
@@ -512,7 +509,7 @@ font = ExtResource("8_2q6y1")
 [node name="CorredorTerreoAcademico" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(0, 32)
+position = Vector2(96, 48)
 zoom = Vector2(0.8, 0.8)
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D"]
@@ -526,11 +523,11 @@ layer_0/tile_data = PackedInt32Array(0, 1, 0, 65536, 1, 1, 131072, 1, 2, 196608,
 [node name="Player" parent="." instance=ExtResource("5_s8s7q")]
 process_priority = 2
 z_index = 1
-position = Vector2(0, 32)
+position = Vector2(96, 48)
 disable_mode = 1
 
 [node name="PhantomCamera2D" type="Node2D" parent="." node_paths=PackedStringArray("follow_target")]
-position = Vector2(0, 32)
+position = Vector2(96, 48)
 script = ExtResource("6_umirj")
 follow_mode = 5
 follow_target = NodePath("../Player")
