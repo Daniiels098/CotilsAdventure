@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="cotiladventures"
-run/main_scene="res://scenes/jogo.tscn"
+run/main_scene="res://scenes/outside_generic.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
@@ -30,7 +30,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/phantom_camera/plugin.cfg", "res://addons/sound_manager/plugin.cfg")
+enabled=PackedStringArray("res://addons/sound_manager/plugin.cfg")
 
 [input]
 
@@ -66,6 +66,12 @@ move_down={
 2d_physics/layer_3="Itens"
 2d_physics/layer_4="NPC"
 
+[phantom_camera]
+
+updater/enable_updater=false
+updater/show_new_release_info_on_editor_launch_in_output=false
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
