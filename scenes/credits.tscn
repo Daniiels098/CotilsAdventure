@@ -1,0 +1,87 @@
+[gd_scene load_steps=7 format=3 uid="uid://ri7jk2aki1jb"]
+
+[ext_resource type="Texture2D" uid="uid://362nku5ne8gm" path="res://assets/desfoque.jpg" id="1_78211"]
+[ext_resource type="Script" path="res://Scripts/credits.gd" id="1_l17ku"]
+[ext_resource type="FontFile" uid="uid://xg2eku68amxe" path="res://fonte/Gamer.ttf" id="2_xwngl"]
+[ext_resource type="Theme" uid="uid://w3u0d2w854ih" path="res://temas/menu.tres" id="4_qk8pv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_w0q5b"]
+font = ExtResource("2_xwngl")
+font_size = 32
+font_color = Color(0, 0, 0, 1)
+outline_size = 5
+outline_color = Color(1, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_65jak"]
+font = ExtResource("2_xwngl")
+font_color = Color(0, 0, 0, 1)
+outline_size = 5
+outline_color = Color(1, 0, 0, 1)
+
+[node name="credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l17ku")
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 320.0
+offset_bottom = 180.0
+texture = ExtResource("1_78211")
+expand_mode = 1
+
+[node name="title" type="Label" parent="."]
+offset_left = 60.0
+offset_right = 260.0
+offset_bottom = 26.0
+text = "Cotil's Adventure
+"
+label_settings = SubResource("LabelSettings_w0q5b")
+uppercase = true
+
+[node name="lb_bruno" type="Label" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 65.0
+offset_right = 169.0
+offset_bottom = 110.0
+text = "Bruno Oliveira Francischetti
+cl201024@g.unicamp.br
+@brunoo_francischetti"
+label_settings = SubResource("LabelSettings_65jak")
+
+[node name="lb_araujo" type="Label" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 127.0
+offset_right = 169.0
+offset_bottom = 172.0
+text = "Eduardo dos Santos de Araujo
+cl201105@g.unicamp.br
+@edu2311araujo"
+label_settings = SubResource("LabelSettings_65jak")
+
+[node name="lb_daniel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 178.0
+offset_top = 84.0
+offset_right = 339.0
+offset_bottom = 129.0
+text = "Daniel de Sousa Ferreira
+cl201117@g.unicamp.br
+@daniiels098"
+label_settings = SubResource("LabelSettings_65jak")
+
+[node name="btn_back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 155.0
+offset_right = 302.0
+offset_bottom = 170.0
+theme = ExtResource("4_qk8pv")
+text = "back"
+
+[connection signal="pressed" from="btn_back" to="." method="_on_button_pressed"]

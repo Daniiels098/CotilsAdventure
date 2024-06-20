@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://bfujpluwp7nux"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_ky2tm"]
-[ext_resource type="Texture2D" uid="uid://dldpsrrxq6sp5" path="res://assets/IMG_1501.JPG" id="2_dlfof"]
+[ext_resource type="Texture2D" uid="uid://362nku5ne8gm" path="res://assets/desfoque.jpg" id="2_dvl4g"]
 [ext_resource type="FontFile" uid="uid://xg2eku68amxe" path="res://fonte/Gamer.ttf" id="3_hn7ae"]
-[ext_resource type="Theme" uid="uid://otpdwn1uwuut" path="res://temas/default_btn.tres" id="4_xeeu6"]
+[ext_resource type="Theme" uid="uid://w3u0d2w854ih" path="res://temas/menu.tres" id="4_juhgc"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_4ttqv"]
 font = ExtResource("3_hn7ae")
@@ -12,7 +12,7 @@ font_color = Color(0, 0, 0, 1)
 outline_size = 5
 outline_color = Color(1, 0, 0, 1)
 
-[node name="Control" type="Control"]
+[node name="menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -21,14 +21,14 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ky2tm")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="background" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 320.0
 offset_bottom = 180.0
-texture = ExtResource("2_dlfof")
+texture = ExtResource("2_dvl4g")
 expand_mode = 1
 
-[node name="Label" type="Label" parent="."]
+[node name="title" type="Label" parent="."]
 layout_mode = 0
 offset_left = 60.0
 offset_right = 260.0
@@ -38,42 +38,43 @@ text = "Cotil's Adventure
 label_settings = SubResource("LabelSettings_4ttqv")
 uppercase = true
 
-[node name="Button" type="Button" parent="."]
+[node name="btn_start" type="Button" parent="."]
 layout_mode = 0
 offset_left = 143.0
-offset_top = 72.0
+offset_top = 71.0
 offset_right = 177.0
-offset_bottom = 87.0
-theme = ExtResource("4_xeeu6")
+offset_bottom = 86.0
+theme = ExtResource("4_juhgc")
 text = "start"
 
-[node name="Button2" type="Button" parent="."]
+[node name="btn_options" type="Button" parent="."]
 layout_mode = 0
 offset_left = 140.0
-offset_top = 96.0
+offset_top = 95.0
 offset_right = 180.0
-offset_bottom = 111.0
-theme = ExtResource("4_xeeu6")
+offset_bottom = 110.0
+theme = ExtResource("4_juhgc")
 text = "options
 "
 
-[node name="Button3" type="Button" parent="."]
+[node name="btn_credits" type="Button" parent="."]
 layout_mode = 0
 offset_left = 140.0
-offset_top = 120.0
+offset_top = 119.0
 offset_right = 180.0
-offset_bottom = 135.0
-theme = ExtResource("4_xeeu6")
+offset_bottom = 134.0
+theme = ExtResource("4_juhgc")
 text = "credits"
 
-[node name="Button4" type="Button" parent="."]
+[node name="btn_quit" type="Button" parent="."]
 layout_mode = 0
 offset_left = 143.0
-offset_top = 144.0
+offset_top = 143.0
 offset_right = 177.0
-offset_bottom = 159.0
-theme = ExtResource("4_xeeu6")
+offset_bottom = 158.0
+theme = ExtResource("4_juhgc")
 text = "quit"
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="btn_start" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="btn_credits" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="btn_quit" to="." method="_on_button_4_pressed"]
