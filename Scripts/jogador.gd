@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 signal player_entering_door
 signal player_exiting_door
-#signal camera_desapar
+signal camera_desapar
 
 @export_category("Variables")
 @export var walk_speed:float = 2.5
