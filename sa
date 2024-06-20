@@ -1,0 +1,59 @@
+[33mcommit a99dcd52fb49ab71799946b6462342996bb04855[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mbackup[m[33m, [m[1;31morigin/backup[m[33m)[m
+Merge: e0aaf3a f0de7b1
+Author: Daniiels <129339259+Daniiels098@users.noreply.github.com>
+Date:   Wed Jun 19 22:13:44 2024 -0300
+
+    Merge pull request #2 from Daniiels098/main
+    
+    Merge pull request #1 from Daniiels098/test
+
+[33mcommit e0aaf3aa57710e663ada5b4d858e87a8cd40b39a[m[33m ([m[1;31morigin/test[m[33m)[m
+Author: Daniels098 <cl201117@g.unicamp.br>
+Date:   Tue Jun 18 23:00:06 2024 -0300
+
+    Subindo arquivos rapidamente
+
+[33mcommit f0de7b1fdc22d6c4c071d04cab3507985bef9ed7[m
+Merge: c333585 dbe1f28
+Author: Daniiels <129339259+Daniiels098@users.noreply.github.com>
+Date:   Tue Jun 18 20:31:23 2024 -0300
+
+    Merge pull request #1 from Daniiels098/test
+    
+    titulo genérico
+
+[33mcommit dbe1f2836302de4fcdc4f59f97bcf76aff2d3c9f[m
+Author: Daniels098 <cl201117@g.unicamp.br>
+Date:   Sat Jun 15 21:22:09 2024 -0300
+
+    Subindo arquivos rapidamente
+
+[33mcommit 6db6c1cd065b0f3df6d20a3cf0b091c5c6c2a2c3[m
+Author: Daniels098 <cl201117@g.unicamp.br>
+Date:   Thu Jun 6 13:17:27 2024 -0300
+
+    Arrumando bug de corte e começando a arrumar a animação
+
+[33mcommit 5dc69e225b1e277e18ee8d56611c392357bb0d2b[m
+Author: Daniels098 <cl201117@g.unicamp.br>
+Date:   Thu Jun 6 10:50:09 2024 -0300
+
+    mudando para renderização no modo compatibilidade
+
+[33mcommit 6b465fb7b7913b6fbc6b76b6e135a6e7703acbb2[m
+Author: Daniels098 <cl201117@g.unicamp.br>
+Date:   Wed Jun 5 13:31:44 2024 -0300
+
+    começando o prédio acadêmico
+
+[33mcommit c3335850466f87e6f8fefd5fb8ac321674939492[m
+Author: Daniels098 <cl201117@g.unicamp.br>
+Date:   Mon May 27 03:24:46 2024 -0300
+
+    subindo v0.6 do jogo
+
+[33mcommit 96fa9f10e8fe8fce35c91723bab9e83955ad2096[m
+Author: Daniiels <129339259+Daniiels098@users.noreply.github.com>
+Date:   Mon May 27 03:05:27 2024 -0300
+
+    Initial commit
