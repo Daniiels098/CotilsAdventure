@@ -1,14 +1,14 @@
-[gd_scene load_steps=11 format=3 uid="uid://c4hjk5pkivdhy"]
+[gd_scene load_steps=11 format=3 uid="uid://2jah8fjbdnk0"]
 
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="1_rdtv5"]
-[ext_resource type="Texture2D" uid="uid://dd02peqmfmfjo" path="res://assets/Sprite-corredor-01.png" id="2_odkyg"]
-[ext_resource type="Texture2D" uid="uid://cgxbis60pjbiy" path="res://assets/sala-verde-in.png" id="3_1ycnm"]
-[ext_resource type="PackedScene" uid="uid://bb78rp30ssm5l" path="res://scenes/jogador.tscn" id="4_wcx34"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2D.gd" id="5_tp5j2"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="6_u5tjd"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="1_bl7ls"]
+[ext_resource type="Texture2D" uid="uid://dd02peqmfmfjo" path="res://assets/Sprite-corredor-01.png" id="2_i71aw"]
+[ext_resource type="Texture2D" uid="uid://cgxbis60pjbiy" path="res://assets/Sprite-sala-04-in.png" id="3_vqoth"]
+[ext_resource type="PackedScene" uid="uid://bb78rp30ssm5l" path="res://scenes/Player.tscn" id="4_qxgs7"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2D.gd" id="5_1d6ki"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="6_lkphl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6he0x"]
-texture = ExtResource("2_odkyg")
+texture = ExtResource("2_i71aw")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -371,7 +371,7 @@ texture = ExtResource("2_odkyg")
 9:11/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_awrku"]
-texture = ExtResource("3_1ycnm")
+texture = ExtResource("3_vqoth")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -1250,7 +1250,7 @@ sources/1 = SubResource("TileSetAtlasSource_awrku")
 sources/0 = SubResource("TileSetAtlasSource_6he0x")
 
 [sub_resource type="Resource" id="Resource_lk3ed"]
-script = ExtResource("6_u5tjd")
+script = ExtResource("6_lkphl")
 duration = 1.0
 transition = 0
 ease = 2
@@ -1262,7 +1262,7 @@ position = Vector2(208, 128)
 zoom = Vector2(0.6, 0.6)
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D"]
-script = ExtResource("1_rdtv5")
+script = ExtResource("1_bl7ls")
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -1272,7 +1272,7 @@ layer_0/tile_data = PackedInt32Array(196620, 458753, 3, 262156, 458753, 4, 32769
 
 [node name="bonecos" type="Node2D" parent="."]
 
-[node name="CharacterBody2D" parent="bonecos" instance=ExtResource("4_wcx34")]
+[node name="CharacterBody2D" parent="bonecos" instance=ExtResource("4_qxgs7")]
 process_priority = 2
 z_index = 1
 position = Vector2(112, 16)
@@ -1280,7 +1280,7 @@ disable_mode = 1
 
 [node name="PhantomCamera2D" type="Node2D" parent="."]
 position = Vector2(208, 128)
-script = ExtResource("5_tp5j2")
+script = ExtResource("5_1d6ki")
 priority = 5
 zoom = Vector2(0.6, 0.6)
 tween_resource = SubResource("Resource_lk3ed")

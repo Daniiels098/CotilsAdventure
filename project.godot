@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="cotiladventures"
-run/main_scene="res://scenes/outside_generic.tscn"
+run/main_scene="res://scenes/Scene_manager.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
@@ -65,6 +65,7 @@ move_down={
 2d_physics/layer_2="Paredes"
 2d_physics/layer_3="Itens"
 2d_physics/layer_4="NPC"
+2d_physics/layer_5="Porta"
 
 [phantom_camera]
 

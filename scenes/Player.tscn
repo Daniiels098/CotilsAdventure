@@ -1,6 +1,6 @@
-[gd_scene load_steps=28 format=3 uid="uid://bb78rp30ssm5l"]
+[gd_scene load_steps=27 format=3 uid="uid://bb78rp30ssm5l"]
 
-[ext_resource type="Script" path="res://scripts/jogador.gd" id="1_lknmn"]
+[ext_resource type="Script" path="res://scripts/Player.gd" id="1_lknmn"]
 [ext_resource type="Texture2D" uid="uid://c47vhgi2dch51" path="res://assets/sprite-perso-t.png" id="1_tast3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3fh2b"]
@@ -36,21 +36,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [14]
-}
-
-[sub_resource type="Animation" id="Animation_eyaqm"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D2:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
 }
 
 [sub_resource type="Animation" id="Animation_1m6ir"]
@@ -187,7 +172,6 @@ tracks/1/keys = {
 _data = {
 "Down": SubResource("Animation_vnycu"),
 "Left": SubResource("Animation_6eyjd"),
-"RESET": SubResource("Animation_eyaqm"),
 "Right": SubResource("Animation_1m6ir"),
 "Up": SubResource("Animation_dc18q"),
 "WalkDown": SubResource("Animation_mp30s"),
@@ -258,7 +242,7 @@ states/walk/node = SubResource("AnimationNodeBlendSpace2D_3yi7t")
 states/walk/position = Vector2(533, 100)
 transitions = ["idle", "walk", SubResource("AnimationNodeStateMachineTransition_upgph"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_hqt3f")]
 
-[node name="boneco" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_mask = 10
 script = ExtResource("1_lknmn")
 
@@ -269,6 +253,7 @@ shape = SubResource("RectangleShape2D_3fh2b")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(0, -4)
 texture = ExtResource("1_tast3")
 centered = false
@@ -292,10 +277,11 @@ parameters/walk/blend_position = Vector2(-0.011045, -0.037037)
 [node name="RayParede" type="RayCast2D" parent="."]
 position = Vector2(8, 8)
 target_position = Vector2(0, 8)
-collision_mask = 14
+collision_mask = 10
 
 [node name="RayPorta" type="RayCast2D" parent="."]
 position = Vector2(8, 8)
 target_position = Vector2(0, 8)
-collision_mask = 14
+collision_mask = 16
+hit_from_inside = true
 collide_with_areas = true

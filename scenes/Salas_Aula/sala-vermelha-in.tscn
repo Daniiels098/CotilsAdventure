@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="1_15h66"]
 [ext_resource type="Texture2D" uid="uid://dd02peqmfmfjo" path="res://assets/Sprite-corredor-01.png" id="2_ajq6h"]
-[ext_resource type="Texture2D" uid="uid://cgxbis60pjbiy" path="res://assets/sala-verde-in.png" id="3_1iapw"]
-[ext_resource type="PackedScene" uid="uid://bb78rp30ssm5l" path="res://scenes/jogador.tscn" id="4_ik6na"]
+[ext_resource type="Texture2D" uid="uid://cgxbis60pjbiy" path="res://assets/Sprite-sala-04-in.png" id="3_1iapw"]
+[ext_resource type="PackedScene" uid="uid://bb78rp30ssm5l" path="res://scenes/Player.tscn" id="4_ik6na"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2D.gd" id="5_7tvpv"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="6_jrfuf"]
 

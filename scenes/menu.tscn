@@ -1,12 +1,12 @@
 [gd_scene load_steps=6 format=3 uid="uid://bfujpluwp7nux"]
 
-[ext_resource type="Script" path="res://scripts/menu.gd" id="1_ky2tm"]
-[ext_resource type="Texture2D" uid="uid://dldpsrrxq6sp5" path="res://assets/IMG_1501.JPG" id="2_dlfof"]
-[ext_resource type="FontFile" uid="uid://xg2eku68amxe" path="res://fonte/Gamer.ttf" id="3_hn7ae"]
-[ext_resource type="Theme" uid="uid://otpdwn1uwuut" path="res://temas/default_btn.tres" id="4_xeeu6"]
+[ext_resource type="Script" path="res://scripts/Menu.gd" id="1_65mik"]
+[ext_resource type="Texture2D" uid="uid://dldpsrrxq6sp5" path="res://assets/IMG_1501.JPG" id="2_on5l1"]
+[ext_resource type="FontFile" uid="uid://xg2eku68amxe" path="res://fonte/Gamer.ttf" id="3_mrfh8"]
+[ext_resource type="Theme" uid="uid://otpdwn1uwuut" path="res://temas/default_btn.tres" id="4_kmvpn"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_4ttqv"]
-font = ExtResource("3_hn7ae")
+font = ExtResource("3_mrfh8")
 font_size = 32
 font_color = Color(0, 0, 0, 1)
 outline_size = 5
@@ -19,13 +19,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_ky2tm")
+script = ExtResource("1_65mik")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 320.0
 offset_bottom = 180.0
-texture = ExtResource("2_dlfof")
+texture = ExtResource("2_on5l1")
 expand_mode = 1
 
 [node name="Label" type="Label" parent="."]
@@ -44,7 +44,7 @@ offset_left = 143.0
 offset_top = 72.0
 offset_right = 177.0
 offset_bottom = 87.0
-theme = ExtResource("4_xeeu6")
+theme = ExtResource("4_kmvpn")
 text = "start"
 
 [node name="Button2" type="Button" parent="."]
@@ -53,7 +53,7 @@ offset_left = 140.0
 offset_top = 96.0
 offset_right = 180.0
 offset_bottom = 111.0
-theme = ExtResource("4_xeeu6")
+theme = ExtResource("4_kmvpn")
 text = "options
 "
 
@@ -63,7 +63,7 @@ offset_left = 140.0
 offset_top = 120.0
 offset_right = 180.0
 offset_bottom = 135.0
-theme = ExtResource("4_xeeu6")
+theme = ExtResource("4_kmvpn")
 text = "credits"
 
 [node name="Button4" type="Button" parent="."]
@@ -72,7 +72,7 @@ offset_left = 143.0
 offset_top = 144.0
 offset_right = 177.0
 offset_bottom = 159.0
-theme = ExtResource("4_xeeu6")
+theme = ExtResource("4_kmvpn")
 text = "quit"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

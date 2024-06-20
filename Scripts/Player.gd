@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 signal player_entering_door
-signal player_exiting_door
+signal player_entered_door
 signal camera_desapar
 
 @export_category("Variables")
@@ -35,10 +35,9 @@ func player_input():
 	if input_direction != Vector2.ZERO:
 		initial_position = position
 		is_moving = true
-		emit_signal("camera_desapar")
 	
 func entered_door():
-	emit_signal("player_entering_door")
+	emit_signal("player_entered_door")
 
 func move(delta):
 	if Input.is_anything_pressed():
@@ -69,8 +68,8 @@ func move(delta):
 			is_moving = false
 			can_walk = false
 			anim_player.play("desapar")
+			emit_signal("player_entered_door")
 			#emit_signal("camera_desapar")
-		
 		else:
 			position = initial_position+(TILE_SIZE*input_direction*percent_moved)
 	elif !rayPa.is_colliding():
@@ -83,4 +82,4 @@ func move(delta):
 			position = initial_position+(TILE_SIZE*input_direction*percent_moved)
 	else:
 		is_moving = false
-		percent_moved = 0
+		percent_moved = 0.0
