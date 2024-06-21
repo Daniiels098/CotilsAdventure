@@ -1,19 +1,12 @@
 [gd_scene load_steps=6 format=3 uid="uid://bfujpluwp7nux"]
 
-<<<<<<< HEAD
-[ext_resource type="Script" path="res://scripts/Menu.gd" id="1_65mik"]
-[ext_resource type="Texture2D" uid="uid://dldpsrrxq6sp5" path="res://assets/IMG_1501.JPG" id="2_on5l1"]
-[ext_resource type="FontFile" uid="uid://xg2eku68amxe" path="res://fonte/Gamer.ttf" id="3_mrfh8"]
-[ext_resource type="Theme" uid="uid://otpdwn1uwuut" path="res://temas/default_btn.tres" id="4_kmvpn"]
-=======
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_ky2tm"]
 [ext_resource type="Texture2D" uid="uid://362nku5ne8gm" path="res://assets/desfoque.jpg" id="2_dvl4g"]
 [ext_resource type="FontFile" uid="uid://xg2eku68amxe" path="res://fonte/Gamer.ttf" id="3_hn7ae"]
 [ext_resource type="Theme" uid="uid://w3u0d2w854ih" path="res://temas/menu.tres" id="4_juhgc"]
->>>>>>> 684b106c6e244710efe8d7198136f9570f06bb40
 
 [sub_resource type="LabelSettings" id="LabelSettings_4ttqv"]
-font = ExtResource("3_mrfh8")
+font = ExtResource("3_hn7ae")
 font_size = 32
 font_color = Color(0, 0, 0, 1)
 outline_size = 5
@@ -26,17 +19,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_65mik")
+script = ExtResource("1_ky2tm")
 
 [node name="background" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 320.0
 offset_bottom = 180.0
-<<<<<<< HEAD
-texture = ExtResource("2_on5l1")
-=======
 texture = ExtResource("2_dvl4g")
->>>>>>> 684b106c6e244710efe8d7198136f9570f06bb40
 expand_mode = 1
 
 [node name="title" type="Label" parent="."]
@@ -54,13 +43,8 @@ layout_mode = 0
 offset_left = 143.0
 offset_top = 71.0
 offset_right = 177.0
-<<<<<<< HEAD
-offset_bottom = 87.0
-theme = ExtResource("4_kmvpn")
-=======
 offset_bottom = 86.0
 theme = ExtResource("4_juhgc")
->>>>>>> 684b106c6e244710efe8d7198136f9570f06bb40
 text = "start"
 
 [node name="btn_options" type="Button" parent="."]
@@ -68,13 +52,8 @@ layout_mode = 0
 offset_left = 140.0
 offset_top = 95.0
 offset_right = 180.0
-<<<<<<< HEAD
-offset_bottom = 111.0
-theme = ExtResource("4_kmvpn")
-=======
 offset_bottom = 110.0
 theme = ExtResource("4_juhgc")
->>>>>>> 684b106c6e244710efe8d7198136f9570f06bb40
 text = "options
 "
 
@@ -83,13 +62,8 @@ layout_mode = 0
 offset_left = 140.0
 offset_top = 119.0
 offset_right = 180.0
-<<<<<<< HEAD
-offset_bottom = 135.0
-theme = ExtResource("4_kmvpn")
-=======
 offset_bottom = 134.0
 theme = ExtResource("4_juhgc")
->>>>>>> 684b106c6e244710efe8d7198136f9570f06bb40
 text = "credits"
 
 [node name="btn_quit" type="Button" parent="."]
@@ -97,13 +71,8 @@ layout_mode = 0
 offset_left = 143.0
 offset_top = 143.0
 offset_right = 177.0
-<<<<<<< HEAD
-offset_bottom = 159.0
-theme = ExtResource("4_kmvpn")
-=======
 offset_bottom = 158.0
 theme = ExtResource("4_juhgc")
->>>>>>> 684b106c6e244710efe8d7198136f9570f06bb40
 text = "quit"
 
 [connection signal="pressed" from="btn_start" to="." method="_on_button_pressed"]

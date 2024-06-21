@@ -39,6 +39,8 @@ func player_input():
 func entered_door():
 	emit_signal("player_entered_door")
 
+#func 
+
 func move(delta):
 	if Input.is_anything_pressed():
 			if input_direction.y > 0:
@@ -73,7 +75,7 @@ func move(delta):
 		else:
 			position = initial_position+(TILE_SIZE*input_direction*percent_moved)
 	elif !rayPa.is_colliding():
-		percent_moved += walk_speed * delta
+		percent_moved += walk_speed*delta
 		if percent_moved >= 1.0:
 			position = initial_position+(TILE_SIZE*input_direction)
 			percent_moved = 0.0

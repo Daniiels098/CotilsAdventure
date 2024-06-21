@@ -5,7 +5,7 @@ extends Node2D
 func _ready():
 	pass
 
-func transitionToScene(new_scene: String):
+func transitionToScene(new_scene: Object):
 	#next_scene = new_scene
 	$ScreenTransition/AnimationPlayer.play("FadeToBlack")
 

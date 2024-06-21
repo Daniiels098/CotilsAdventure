@@ -250,7 +250,6 @@ script = ExtResource("1_lknmn")
 position = Vector2(7.99999, 8.00002)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_3fh2b")
-debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(0, -4)

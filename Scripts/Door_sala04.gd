@@ -2,7 +2,7 @@ extends Area2D
 
 @onready var sprite = $Sprite2D2
 @onready var anim_player = $AnimationPlayer
-@export var next_scene_path = load("res://scenes/Salas_Aula/sala_azul.tscn")
+@export var next_scene_path = ""
 
 func _ready():
 	sprite.visible = true

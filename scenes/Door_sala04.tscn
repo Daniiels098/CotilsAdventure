@@ -1,30 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://dfuxucadf64cm"]
+[gd_scene load_steps=8 format=3 uid="uid://bhwq02n6higdr"]
 
-[ext_resource type="Texture2D" uid="uid://dy5utp1slqhkf" path="res://assets/Sprite-porta-01.png" id="1_6lvee"]
-
-[sub_resource type="GDScript" id="GDScript_6ykhq"]
-script/source = "extends Area2D
-
-@onready var sprite = $Sprite2D2
-@onready var anim_player = $AnimationPlayer
-@export var next_scene_path = load(\"res://scenes/Salas_Aula/sala_azul.tscn\")
-
-func _ready():
-	sprite.visible = true
-	var player = find_parent(\"CurrentScene\").get_children().back().get_node(\"Player\")
-	player.connect(\"player_entering_door\", enter_door)
-	player.connect(\"player_entered_door\", close_door)
-
-func enter_door():
-	anim_player.play(\"opening\")
-
-func close_door():
-	anim_player.play(\"closing\")
-
-func door_closed():
-	#get_tree().change_scene_to_file(next_scene_path)
-	get_node(\"/root/CenaManager\").transitionToScene(next_scene_path)
-"
+[ext_resource type="Script" path="res://scripts/Door_sala04.gd" id="1_wxtrt"]
+[ext_resource type="Texture2D" uid="uid://dy5utp1slqhkf" path="res://assets/Sprite-porta-01.png" id="2_tdytj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lpmtn"]
 size = Vector2(16, 16)
@@ -100,11 +77,11 @@ _data = {
 [node name="sala04" type="Area2D"]
 collision_layer = 16
 priority = 2
-script = SubResource("GDScript_6ykhq")
+script = ExtResource("1_wxtrt")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(8, 8)
-texture = ExtResource("1_6lvee")
+texture = ExtResource("2_tdytj")
 hframes = 5
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
